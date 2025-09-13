@@ -16,7 +16,7 @@
 
 <script>
 import { ref } from "vue";
-import { createNote } from "../api.js";
+import { createNote } from "../services/api.js";
 
 export default {
   emits: ["note-added"],
