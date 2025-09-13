@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-app.use('/routes', require('./backend/routes/notes.js'));
+app.use('/routes', require('./backend/routes/notes'));
 app.use(cors());
 app.use(express.json());
 app.use('/api/notes', notesRouter);
