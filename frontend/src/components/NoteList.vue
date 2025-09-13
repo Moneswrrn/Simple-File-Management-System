@@ -1,0 +1,1 @@
+<template><div>NoteList placeholder</div></template>

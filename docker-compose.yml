@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/usr/src/app
+      - ./backend/notes.db:/usr/src/app/notes.db
+    environment:
+      - NODE_ENV=development
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/usr/src/app
+    environment:
+      - VITE_API_BASE_URL=http://host.docker.internal:5000

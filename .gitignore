@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+npm-debug.log
+.env
+
+# Build outputs
+dist/
+build/
+
+# SQLite database
+*.sqlite
+*.db
+
+# Logs
+*.log
