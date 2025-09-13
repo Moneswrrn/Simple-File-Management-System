@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // Mount the notes routes at /api/notes
-app.use("/api/notes", notesRouter);
+app.use("/routes", notesRouter);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
