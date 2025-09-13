@@ -27,8 +27,8 @@ A full-stack CRUD web app to manage notes with title & content.
    - Runs on `http://localhost:5173`
 
 ## Deployment
-- Frontend: [Live Demo](your-frontend-link)
-- Backend API: [API Base URL](your-backend-link)
+- Frontend: https://simple-file-management-system.vercel.app/
+- Backend API: https://simple-file-management-system-production.up.railway.app/
 
 ## Development Process (AI Usage)
 1. **Prompt:** “Generate a TailwindCSS card layout with hover animation.”  
