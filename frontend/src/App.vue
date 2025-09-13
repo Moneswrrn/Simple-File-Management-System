@@ -1,16 +1,16 @@
 <template>
   <div class="container">
     <h1>Simple File Management System</h1>
-    <NoteForm @note-added="fetchNotes" />
-    <NoteList :notes="notes" @note-deleted="fetchNotes" />
+    <NoteForm @note-added="loadNotes" />
+    <NoteList :notes="notes" @note-deleted="loadNotes" />
   </div>
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
-import NoteForm from './components/NoteForm.vue';
-import NoteList from './components/NoteList.vue';
-import { fetchNotes } from './api.js';
+import { ref, onMounted } from "vue";
+import NoteForm from "./components/NoteForm.vue";
+import NoteList from "./components/NoteList.vue";
+import { fetchNotes } from "./api.js";
 
 export default {
   components: { NoteForm, NoteList },
@@ -23,12 +23,16 @@ export default {
 
     onMounted(loadNotes);
 
-    return { notes, fetchNotes: loadNotes };
-  }
+    return { notes, loadNotes };
+  },
 };
 </script>
 
 <style>
-/* optional styling */
-.container { max-width: 600px; margin: 2rem auto; }
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: Arial, sans-serif;
+}
 </style>
