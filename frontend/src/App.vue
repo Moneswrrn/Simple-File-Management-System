@@ -10,7 +10,7 @@
 import { ref, onMounted } from "vue";
 import NoteForm from "./components/NoteForm.vue";
 import NoteList from "./components/NoteList.vue";
-import { fetchNotes } from "services/api.js";
+import { fetchNotes } from "./services/api.js";
 
 export default {
   components: { NoteForm, NoteList },
