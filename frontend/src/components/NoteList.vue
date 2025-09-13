@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { deleteNote } from "../api.js";
+import { deleteNote } from "../services/api.js";
 
 export default {
   props: { notes: Array },
