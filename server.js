@@ -5,7 +5,7 @@ const app = express();
 app.use('/routes', require('./backend/routes/notes.js'));
 app.use(cors());
 app.use(express.json());
-app.use('/routes/notes', notesRouter);
+app.use('/api/notes', notesRouter);
 
 
 const PORT = process.env.PORT || 5000;
